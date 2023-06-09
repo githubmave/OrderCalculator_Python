@@ -1,4 +1,5 @@
 
+import math
 class CartOne:
     # Given empty shopping cart
      cartItems=[]
@@ -13,5 +14,5 @@ class CartOne:
           i+=1
         # calculate total price
         self.totalPrice=CartOne.UnitPrice*5
-        print(f'The total price for cart items is : {self.totalPrice}')       
+        print(f'The total price for cart items is : {round(self.totalPrice*100/100,2)}')       
 myInstance = CartOne()
